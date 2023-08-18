@@ -1,0 +1,125 @@
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255, 240, 233, 0.607), rgba(234, 177, 150, 0.591));
+}
+
+.bottomPattern{
+    width: 500px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+}
+
+.topPattern{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+
+.homeHero{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homeLContent{
+    position: relative;
+    right: -5%;
+}
+
+.lImg{
+    width: 750px;
+    position: relative;
+    right: -6.5%;
+}
+
+.homeSubHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 240, 233, 0.607), rgba(234, 177, 150, 0.591));
+    padding: 0.5rem;
+    width: 350px;
+    margin-bottom: 2rem;
+}
+
+.homeSubHead h5:nth-child(1){
+    margin-right: 0.5rem;
+}
+
+.homeSubHead h5{
+    color: #B16642;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 18px;
+}
+
+.homeLContent h1{
+    font-size: 3rem;
+    width: 450px;
+    margin-bottom: 2rem;
+}
+
+.homeLContent p{
+    color: #B16642;
+    font-size: 1rem;
+    width: 500px;
+    margin-bottom: 2rem;
+    font-weight: 200;
+}
+
+.homeLContent button{
+    padding: 1rem;
+    color: #3B3A5D;
+    background: #fff;
+    border: none;
+    font-family: 'Kufam', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px){
+    /* .homeHero{
+        flex-direction: column;
+    } */
+    .bottomPattern{
+        left: -50px;
+    }
+    
+    .topPattern{
+        width: 500px;
+    }
+
+    .homeLContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        right: 0;
+    }
+    
+    .lImg{
+        width: 300px;
+        display: none;
+    }
+}
+
+
+
+
+

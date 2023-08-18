@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;600;700;800;900&family=Source+Sans+3:wght@200;300;400;500&display=swap');
+
+:root{
+    --font-heading:'Kufam', sans-serif ;
+    --font-paragraph: 'Source Sans 3', sans-serif;
+    --primary-color: #3B3A5D;
+    --secondary-color: #FFBB50;
+    --content-color: #8F8F8F;
+    --link-color: #B16642;
+    --border-color: #B16642;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbarLink{
+    color: var(--content-color);
+}
+
+
+.navbarLink:hover{
+    color: var(--link-color);
+}
+
+.primaryBtn{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: var(--font-paragraph);
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition:  1s all ease-in-out;
+}
+
+.secondaryBtn{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-family: var(--font-paragraph);
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    transition:  1s all ease-in-out;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--primary-color);
+    font-family:var(--font-heading) !important;
+}
+
+a{
+    text-decoration: none;
+    color: var(--link-color);
+    font-family: var(--font-heading);
+}
+
+p{
+    color: var(--font-paragraph);
+    line-height: normal;
+    letter-spacing:.7px;
+    word-spacing:-.9px;
+    font-size: .8em;
+}

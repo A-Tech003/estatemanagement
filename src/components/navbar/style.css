@@ -1,0 +1,69 @@
+.navBarItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.085);
+    border-radius: 0.1rem;
+    width: 75%;
+    height: 6.5rem;
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+    background: #fff;
+}
+
+.logo{
+    width: 12rem;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navBarMenu{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.navbarLink{
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburger{
+        display: initial;
+    }
+
+    .navBarMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        opacity: 0;
+        background: #fff;
+        align-items: stretch;
+        padding: 7rem 0 3rem 0;
+        margin: 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navBarMenu.active{
+        border-radius: 1.5rem;
+        left: 0;
+        opacity: 1;
+        z-index: -2;
+    }
+}
