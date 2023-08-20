@@ -1,0 +1,98 @@
+.proper{
+    max-width: 75%;
+    min-height: 300px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftDiv{
+    border: none;
+    max-width: 950px;
+    padding: 2rem;
+    border-radius: 0.3rem;
+    background-color: #F2F2F2;
+}
+
+.introSubHead{
+    font-size: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.3rem;
+    max-width: 300px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.introSubHead span{
+    margin-right: 0.3rem;
+    color: #FFBB50;
+}
+
+.head{
+    font-size: 2rem;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.body{
+    color: #B16642;
+    font-size: 1rem;
+    max-width: 700px;
+    margin-bottom: 2rem;
+    font-weight: 200;
+}
+
+.features{
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3B3A5D;
+    border: 6px solid #CFCFCF;
+}
+
+.rightDiv{
+    max-width: 300px;
+    border-radius: 0.3rem;
+    height: 330px;
+    position: relative;
+    margin-left: 2rem;
+}
+
+.rightDiv video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.videoOverlay{
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+}
+
+.videoOverLayCircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,37 @@
+.propContainer{
+    max-width: 100%;
+    min-height: 100vh;
+    background: #F5F1EF;
+    padding: 2rem;
+    position: relative;
+}
+
+.propHead{
+    /* border: 2px solid black; */
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.introSubHead{
+    max-width: 350px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+}
+
+.head{
+    margin-bottom: 0rem;
+}
+
+
+
+
+
+.PropImg{
+    max-width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}

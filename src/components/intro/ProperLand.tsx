@@ -1,13 +1,29 @@
 import "./style.css"
-import React from 'react'
-import ReactPlayer from 'react-player';
-// import video from '../../assests/InteriorDesign.mp4';
-
+import React, {useRef} from 'react'
+import Video from "../../assests/InteriorDesign.mp4"
+import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 const ProperLand = () => {
+    const [playVideo, setplayVideo] = React.useState(false)
+    const vidRef = useRef<HTMLInputElement | any>();
+
+
+    const handleVideo = () => {
+        setplayVideo((prevPlayVideo) => !prevPlayVideo)
+    
+        if (vidRef.current != null) {
+        if(playVideo){
+          vidRef.current.pause();
+        }else {
+          vidRef.current.play();
+        }
+      }
+    }
+
+
   return (
-    <div>
+    <div className="proper">
         <div className="leftDiv">
-            <p className="subHead">
+            <p className="introSubHead">
                 <span>01</span> 
                 PROPERLAND INTRO
             </p>
@@ -34,11 +50,21 @@ const ProperLand = () => {
         </div>
 
         <div className="rightDiv">
-            <ReactPlayer
-            url="https://www.youtube.com/embed/EkpYgepycN4" // Replace with your video URL
-            width="100%"
-            controls // Show video controls (play, pause, etc.)
+            <video 
+            src={Video} 
+            ref = {vidRef}
+            controls={false}
+            muted
             />
+
+          <div className="videoOverlay" onClick={handleVideo}>
+              <div className="videoOverLayCircle flex__center">
+                {playVideo 
+                ? <BsPauseFill color = '#fff' fontSize={30}/>
+                : <BsFillPlayFill color = '#fff' fontSize={30}/> 
+                }
+            </div>
+          </div>
         </div>
     </div>
   )
