@@ -22,7 +22,7 @@
     padding: 0.3rem;
     max-width: 300px;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     margin-bottom: 1.5rem;
 }
 
@@ -48,8 +48,9 @@
 .features{
     max-width: 650px;
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     flex-wrap: wrap;
+    color: #757575;
 }
 
 .features div{
@@ -58,6 +59,7 @@
     border-radius: 50%;
     background: #3B3A5D;
     border: 6px solid #CFCFCF;
+    margin-right: -10px;
 }
 
 .rightDiv{
@@ -86,11 +88,36 @@
     border-radius: 0.3rem;
 }
 
-.videoOverLayCircle{
+.videoOverLayCircle1{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: 1px solid #ffffff25;
+    background-color: #ffffff25;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoOverLayCircle2{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #ffffff54;
+    background-color: #ffffff69;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoOverLayCircle3{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     border: 1px solid #fff;
+    background-color: #ffffff;
     cursor: pointer;
     display: flex;
     justify-content: center;

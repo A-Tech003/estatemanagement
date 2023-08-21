@@ -45,7 +45,7 @@ const ProperLand = () => {
             <div className="features">
                 <div></div> <span>Only pay when you publish</span>
                 <div></div> <span>Unlimited featured used</span>
-                <div></div> <span>Only pay when you publish</span>
+                <div></div> <span>24/7 supports</span>
             </div>
         </div>
 
@@ -58,11 +58,15 @@ const ProperLand = () => {
             />
 
           <div className="videoOverlay" onClick={handleVideo}>
-              <div className="videoOverLayCircle flex__center">
-                {playVideo 
-                ? <BsPauseFill color = '#fff' fontSize={30}/>
-                : <BsFillPlayFill color = '#fff' fontSize={30}/> 
-                }
+            <div className="videoOverLayCircle1">
+              <div className="videoOverLayCircle2">
+                <div className="videoOverLayCircle3">
+                  {playVideo 
+                    ? <BsPauseFill color = '#000' fontSize={30}/>
+                    : <BsFillPlayFill color = '#000' fontSize={30}/> 
+                  }
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,3 +75,4 @@ const ProperLand = () => {
 }
 
 export default ProperLand
+
