@@ -3,6 +3,7 @@ import React from 'react';
 import PropImg from '../../assests/Pattern.png'
 import FeaturedProperties from "./FeaturedProperties";
 
+
 const Property1 = () => {
   return (
     <div className="propContainer">
@@ -18,6 +19,7 @@ const Property1 = () => {
         </div>
 
         <FeaturedProperties/>
+
 
         <img className="PropImg" src={PropImg} alt="simple shape"/>
     </div>
