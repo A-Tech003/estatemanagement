@@ -11,7 +11,7 @@ const Container = () => {
     // api consumption start here
 
 
-    const url = "https://realestateapi.000webhostapp.com/api/featuredproperties"
+    const url = "https://laravelrealestateapi.000webhostapp.com/api/featuredproperties" 
     useEffect(()=>{
         setLoading(!loading);
         fetch(url)

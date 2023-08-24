@@ -1,0 +1,99 @@
+.whyContainer{
+    margin-top: 6rem;
+}
+.whyHead{
+    /* border: 2px solid black; */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.whySubHead span{
+    margin-right: 0.3rem;
+    color: #FFBB50;
+}
+
+.whySubHead{
+    max-width: 250px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.3rem;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.whyhead{
+    margin-bottom: 0rem;
+}
+
+.whyContentContainer{
+    max-width: 75%;
+    /* border: 2px solid black; */
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 0.2rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+}
+
+.grid{
+    width: 100%;
+    border: none;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    background: linear-gradient(170deg, #f3d1c1e3, #FFEEE5);
+    border-radius: 0.3rem;
+}
+
+.grid p{
+    color: #B16642;
+}
+
+.image{
+    max-width: 200px;
+}
+
+.images{
+    max-width: 150px;
+}
+
+.imagess{
+    max-width: 130px;
+    margin-top: -12px;
+}
+
+.grid-col-span-2{
+    grid-column: span 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.grid-col-span-2 img{
+    width: 350px;
+}
+
+.grid-col-span-2 p{
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+.below-content p{
+    letter-spacing: 1px;
+}
+
+.below-content h3{
+    margin: 1rem 0rem;
+}
+
+.trusted h3{
+    margin-top: -1rem;
+}
