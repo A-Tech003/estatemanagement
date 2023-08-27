@@ -16,15 +16,17 @@ const About = () => {
                 42+ years of helping you find the right property.
             </h1>
 
-            <p>Distinctively re-engineer revolutionary meta-services 
-                and premium  At vero eos et accusamus et iusto
+            <p className="aboutbody">Distinctively re-engineer revolutionary meta-services 
+                and premium  At vero eos et accusamus et iusto 
+            </p>
 
+            <p className="aboutbody aboutbody1">
                 Dignissimos ducimus qui blanditiis praesentium voluptatum 
                 deleniti atque corrupti quos dolores et quas molestias excepturi.Lorem 
                 ipsum dolor sit amet, consectetur adipiscing elit. 
             </p>
 
-            <button>Learn More <FaArrowAltCircleRight/></button>
+            <button className="secondaryBtn">Learn More <FaArrowAltCircleRight style={{marginLeft: "0.5rem"}}/></button>
         </div>
 
         <div className="rightAbout">

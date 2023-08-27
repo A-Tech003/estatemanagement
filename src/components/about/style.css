@@ -1,22 +1,25 @@
 .aboutContainer{
     max-width: 100%;
     min-height: 350px;
-    background: linear-gradient(#DCDCDC, #fff0e98b);
+    background: linear-gradient(#F2F1EF, #F2F1EF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutImg{
-    height: 450px;
+    max-width: 900px;
+    height: 500px;
 }
 
-.whySubHead span{
+.aboutSubHead span{
     margin-right: 0.3rem;
     color: #FFBB50;
 }
 
-.whySubHead{
-    max-width: 250px;
+.aboutSubHead{
+    max-width: 200px;
     margin-bottom: 1rem;
-    margin-inline: auto;
     font-size: 1rem;
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -25,6 +28,25 @@
     letter-spacing: 6px;
 }
 
-.whyhead{
-    margin-bottom: 0rem;
+.abouthead{
+    margin-bottom: 1rem;
+    max-width: 420px;
+}
+
+.aboutbody{
+    line-height: 1.7em;
+    max-width: 480px;
+    font-size: 1rem;
+    color: #B16642;
+}
+
+.aboutbody1{
+    margin-top: 0.3rem;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
