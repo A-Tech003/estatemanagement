@@ -3,3 +3,28 @@
     min-height: 350px;
     background: linear-gradient(#DCDCDC, #fff0e98b);
 }
+
+.aboutImg{
+    height: 450px;
+}
+
+.whySubHead span{
+    margin-right: 0.3rem;
+    color: #FFBB50;
+}
+
+.whySubHead{
+    max-width: 250px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.3rem;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.whyhead{
+    margin-bottom: 0rem;
+}
