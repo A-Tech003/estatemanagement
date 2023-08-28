@@ -1,0 +1,96 @@
+.serviceContainer{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    position: relative;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+.serviceHead{
+    /* border: 2px solid black; */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.serviceSubHead span{
+    margin-right: 0.3rem;
+    color: #FFBB50;
+}
+
+.serviceSubHead{
+    max-width: 250px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.3rem;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.servicehead{
+    margin-bottom: 0rem;
+}
+
+.service1{
+    max-width: 75%;
+    min-height:200px;
+    margin: 0 auto ;
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.service1 img{
+    width: 90px;
+}
+
+.service1 h3{
+    margin: 0.3rem 0;
+}
+
+.service2{
+    margin-top: 2rem;
+    max-width: calc(75%/1.5);
+    min-height:200px;
+    margin-inline: auto ;
+    /* border: 2px solid black; */
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.service2 img{
+    width: 90px;
+}
+
+.service2 h3{
+    margin: 0.3rem 0;
+}
+
+.rent, .sale, .buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.rent p, .sale p, .buy p{
+    max-width: 250px;
+    text-align: center;
+    color: #8F8F8F;
+}
+
+.rent h3{
+    text-align: center;
+}
+
+.pattern{
+    position: absolute;
+    right: -15rem;
+    bottom: -12rem;
+    width: 450px;
+}
