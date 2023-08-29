@@ -14,6 +14,13 @@ const Review = () => {
                 <div className="arrow"><FaArrowRight/></div>
             </div>
         </div>
+
+        <div className="bottom">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis at ut inventore nesciunt quis facere hic distinctio voluptatem, vel dicta voluptas nostrum commodi pariatur totam quas sint provident veniam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis at ut inventore nesciunt quis facere hic distinctio voluptatem, vel dicta voluptas nostrum commodi pariatur totam quas sint provident veniam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis at ut inventore nesciunt quis facere hic </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum perspiciatis at ut inventore nesciunt quis facere hic distinctio voluptatem, vel dicta voluptas nostrum commodi pariatur totam quas sint provident veniam!</div>
+        </div>
     </div>
   )
 }

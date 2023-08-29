@@ -2,7 +2,7 @@
     max-width: 100%;
     min-height: 600px;
     background-color: #F3E8E2;
-    border: 2px solid black;
+    border: 2px solid #F3E8E2;
 }
 
 .topCon{
@@ -15,6 +15,28 @@
     align-items: center;
 }
 
+.bottom{
+    border: 2px solid black;
+    max-width: 77%;
+    margin: 4rem auto;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.bottom div{
+    border: 2px solid black;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem 2rem 2rem 0;
+    padding: 2rem;
+}
+
+.leftcon{
+    width: 350px;
+}
 .buttons{
     width: 150px;
     display: flex;
