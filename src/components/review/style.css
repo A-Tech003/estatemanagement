@@ -1,8 +1,10 @@
 .reviewContainer{
     max-width: 100%;
-    min-height: 600px;
+    min-height: 550px;
     background-color: #F3E8E2;
     border: 2px solid #F3E8E2;
+    position: relative;
+    overflow: hidden;
 }
 
 .topCon{
@@ -15,28 +17,10 @@
     align-items: center;
 }
 
-.bottom{
-    border: 2px solid black;
-    max-width: 77%;
-    margin: 4rem auto;
-    padding: 5rem;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.bottom div{
-    border: 2px solid black;
-    width: 300px;
-    height: auto;
-    border-radius: 2rem 2rem 2rem 0;
-    padding: 2rem;
-}
-
 .leftcon{
     width: 350px;
 }
+
 .buttons{
     width: 150px;
     display: flex;
@@ -52,4 +36,40 @@
     display: grid;
     place-content: center;
     border-radius: 40rem;
+}
+
+.bottom{
+    /* border: 2px solid black; */
+    width: 100rem;
+    display: inline-block;
+    position: absolute;
+    right: -17rem;
+
+    display: flex;
+}
+
+.bottom .div{
+    background: linear-gradient(270deg, #ECC8B7, #F4DBCE);
+    width: 340px;
+    border-radius: 2rem 2rem 2rem 0;
+    padding: 1.5rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px 10px;
+    color: #B16642;
+    font-size: 1.2rem;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #F4DACD;
+    border-radius: 20rem;
+    margin-left: 10px;
+}
+
+.profile img{
+    width: 100%;
+    width: 100%;
+    border-radius: 20rem;
 }

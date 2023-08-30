@@ -27,7 +27,7 @@ const About = () => {
                     ipsum dolor sit amet, consectetur adipiscing elit. 
                 </p>
 
-                <button className="secondaryBtn">Learn More <FaArrowAltCircleRight style={{marginLeft: "0.5rem"}}/></button>
+                <button className="secondaryBtn aboutButton">Learn More <FaArrowAltCircleRight style={{marginLeft: "0.5rem"}}/></button>
             </div>
 
             <div className="rightAbout">
