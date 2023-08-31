@@ -1,0 +1,109 @@
+.locationContainer{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    position: relative;
+    /* border: 2px solid black; */
+    overflow: hidden;
+}
+.locationHead{
+    /* border: 2px solid black; */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.locationSubHead span{
+    margin-right: 0.3rem;
+    color: #FFBB50;
+}
+
+.locationSubHead{
+    max-width: 250px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.3rem;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.locationhead{
+    margin-bottom: 0rem;
+}
+
+.neigbor-container{
+    /* border: 2px solid black; */
+    max-width: 350px;
+    min-height: 300px;
+    border-radius: 0.3rem;
+    position: relative;
+    /* padding: 1rem; */
+    /* margin-left: 2rem; */
+}
+
+.neigbor-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(200deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6));
+    border-radius: 0.3rem; /* Semi-transparent black */
+    z-index: 1;
+}
+
+.neigbor-img{
+    max-width: 350px;
+    height: 300px;
+    border-radius: 0.3rem;
+}
+
+.neigbor-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+    object-fit: cover;
+}
+
+.neigbor-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #ffffff54;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 20rem;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.neigbor-content{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 500;
+}
+
+.neigbor-content h3{
+    color: #fff;
+}
+
+.neigbor-content p{
+    color: #FFBB50;
+}
+
+.locationGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    /* border: 2px solid black; */
+    max-width: 70%;
+    margin: 0 auto;
+}

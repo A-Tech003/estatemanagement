@@ -1,5 +1,6 @@
 .counterContainer{
     /* border: 2px solid black; */
+    border-bottom: 1px solid #E4E4E4;
     max-width: 80%;
     display: flex;
     justify-content: space-around;
