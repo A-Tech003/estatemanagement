@@ -16,11 +16,13 @@ const NeigborHoodCard = () => {
 
     useEffect(() => {
         const url = "https://laravelrealestateapi.000webhostapp.com/api/locationpropertycount";
+        setIsLoading(!isloading)
         fetch(url)
         .then((Response) => Response.json())
         .then((data) => {
-            console.log(data.data);
-            setNeigborHoods(data.data)
+            // console.log(data.data);
+            setNeigborHoods(data.data);
+            setIsLoading(isloading);
         })
         .catch((err) => {
             console.log(err.message);
