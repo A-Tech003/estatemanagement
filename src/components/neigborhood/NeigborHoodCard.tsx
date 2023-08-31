@@ -29,30 +29,43 @@ const NeigborHoodCard = () => {
         })
     }, [])
 
-
-    return(
-        <div className='locationGrid'>
-            {
-                neigborhoods.map((neigborhood: any) => {
-                    return(
-                        <div className='neigbor-container' key={neigborhood.id}>
-                            <div className="neigbor-container-overLay"></div>
-                            <div className="neigbor-btn">
-                                <FaArrowRight/>
+    if(isloading){
+        return(
+            <div className="loadContainer">
+                Loading...
+            </div>
+        )
+    }else if(error){
+        return(
+            <div className="errorContainer">
+                Error: { error }. Please try again later!
+            </div>
+        )
+    }else{
+        return(
+            <div className='locationGrid'>
+                {
+                    neigborhoods.map((neigborhood: any) => {
+                        return(
+                            <div className='neigbor-container' key={neigborhood.id}>
+                                <div className="neigbor-container-overLay"></div>
+                                <div className="neigbor-btn">
+                                    <FaArrowRight/>
+                                </div>
+                                <div className="neigbor-img">
+                                    <img src={neigborhood.picture} alt="" />
+                                </div>
+                                <div className="neigbor-content">
+                                    <h3>{neigborhood.location}</h3>
+                                    <p>{neigborhood.property_count} Property</p>
+                                </div>
                             </div>
-                            <div className="neigbor-img">
-                                <img src={neigborhood.picture} alt="" />
-                            </div>
-                            <div className="neigbor-content">
-                                <h3>{neigborhood.location}</h3>
-                                <p>{neigborhood.property_count} Property</p>
-                            </div>
-                        </div>
-                    )
-                })
-            }
-        </div>
-    )
+                        )
+                    })
+                }
+            </div>
+        )
+    }
 
 
 

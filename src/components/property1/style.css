@@ -55,24 +55,23 @@
 }
 
 .properties{
-    max-width: 80%;
-    margin-inline: auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    /* border: 2px solid; */
-    gap: 2rem;
     padding: 2rem;
-    align-items: center;
-    
+    /* border: 2px solid; */
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 2rem;    
 }
 
 .propertyContainer{
-    max-width: 30rem;
+    width: 100%;
     padding: 20px;
     border: none;
     border-radius: 0.2rem;
     background: #fff;
     z-index: 10;
+    /* border: 2px solid; */
 }
 
 .propImage{
@@ -142,5 +141,5 @@
     align-items: center;
     text-align: center;
     z-index: 10;
-    cursor: pointer;
+    cursor: pointer !important;
 }
