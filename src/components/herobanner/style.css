@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 15rem 0 0 0;
+    /* padding: 15rem 0 0 0; */
 }
 
 .bottomPattern{
@@ -27,7 +27,9 @@
 }
 
 .heroContent{
-    width: 75%;
+    border: 2px solid;
+    max-width: 75%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
