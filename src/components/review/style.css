@@ -4,16 +4,16 @@
     background-color: #F3E8E2;
     border: 2px solid #F3E8E2;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .topCon{
-    /* border: 2px solid black; */
+    border: 2px solid black;
     max-width: 75%;
     margin: 4rem auto;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-around;
     color: #fff;
+    cursor: pointer;
 }
 
 .arrow{
@@ -39,11 +40,12 @@
 }
 
 .bottom{
-    /* border: 2px solid black; */
-    width: 100rem;
+    border: 2px solid black;
+    width: 90%;
     display: inline-block;
+    /* margin: 0 auto; */
     position: absolute;
-    right: -17rem;
+    right: 0rem;
 
     display: flex;
 }
@@ -58,6 +60,7 @@
     margin: 5px 10px;
     color: #B16642;
     font-size: 1.2rem;
+
 }
 
 .profile{
