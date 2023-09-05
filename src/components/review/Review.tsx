@@ -1,22 +1,34 @@
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import "./style.css"
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Lady from "../../assests/Lady.jpg";
 import Man from "../../assests/Photo.jpg"
 import ManHat from "../../assests/image 15.jpg"
 import Woman from "../../assests/image 16.jpg"
 
+// // Import Swiper React components
+// import { Swiper, SwiperSlide } from 'swiper/react';
+
+// // Import Swiper styles
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+
+// // import required modules
+// import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 
-const Review = () => {
-    const [scrollIndex, setScrollIndex] = useState(0);
-    const scrollLeft = () => {
-        setScrollIndex(Math.max(scrollIndex - 1, 0));
-    };
 
-    const scrollRight = () => {
-        setScrollIndex(Math.min(scrollIndex + 1, 5 - 1));
-    };
+
+const Review: React.FC = () => {
+    
+    // const [scrollIndex, setScrollIndex] = useState(0);
+    // const scrollLeft = () => {
+    //     setScrollIndex(Math.max(scrollIndex - 1, 0));
+    // };
+
+    // const scrollRight = () => {
+    //     setScrollIndex(Math.min(scrollIndex + 1, 5 - 1));
+    // };
 
 
 
@@ -27,13 +39,14 @@ const Review = () => {
                 <h1>What our customers say about us</h1>
             </div>
             <div className="buttons">
-                <div onClick={scrollLeft} className="arrow"><FaArrowLeft/></div>
-                <div onClick={scrollRight} className="arrow"><FaArrowRight/></div>
+                <div  className="arrow"><FaArrowLeft/></div>
+                <div  className="arrow"><FaArrowRight/></div>
             </div>
         </div>
 
 
-        <div className="bottom">
+
+        {/* <div className="bottom">
             <div>
                 <div className="div">
                     <p>
@@ -101,7 +114,7 @@ const Review = () => {
                 </div>
                 <div className="profile"><img src={Woman}/></div>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
