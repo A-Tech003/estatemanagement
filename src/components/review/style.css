@@ -8,7 +8,7 @@
 }
 
 .topCon{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     max-width: 75%;
     margin: 4rem auto;
 
@@ -40,10 +40,10 @@
 }
 
 .bottom{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 90%;
     display: inline-block;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     position: absolute;
     right: 0rem;
 
