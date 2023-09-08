@@ -5,32 +5,47 @@ import Lady from "../../assests/Lady.jpg";
 import Man from "../../assests/Photo.jpg";
 import ManHat from "../../assests/image 15.jpg";
 import Woman from "../../assests/image 16.jpg";
-import Slider from "react-slick"
+import Slider from "react-slick";
 
 
+function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+  }
 
 
 
 const Review = () => {
+  const slider = useRef(null);
     
-    // const [scrollIndex, setScrollIndex] = useState(0);
-    // const scrollLeft = () => {
-    //     setScrollIndex(Math.max(scrollIndex - 1, 0));
-    // };
-
-    // const scrollRight = () => {
-    //     setScrollIndex(Math.min(scrollIndex + 1, 5 - 1));
-    // };
 
     const settings = {
         dots: true,
         infinite: true,
+        arrows: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
-
-
 
 
 
@@ -41,12 +56,12 @@ const Review = () => {
                 <h1>What our customers say about us</h1>
             </div>
             <div className="buttons">
-                <div  className="arrow"><FaArrowLeft/></div>
-                <div  className="arrow"><FaArrowRight/></div>
+                <div onClick={() => slider.current.slickPrev()}  className="arrow"><FaArrowLeft/></div>
+                <div onClick={() => slider.current.slickNext()} className="arrow"><FaArrowRight/></div>
             </div>
         </div>
 
-        <Slider className="bottom" {...settings}>
+        <Slider ref={slider} className="bottom" {...settings}>
           <div>
                 <div className="div">
                     <p>
