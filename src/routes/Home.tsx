@@ -10,6 +10,7 @@ import Review from '../components/review/Review';
 import Counter from '../components/counter/Counter';
 import NeigborHood from '../components/neigborhood/NeigborHood';
 import Partnership from '../components/partnership/Partnership';
+import Blog from '../components/blog/Blog';
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Counter/>
       <NeigborHood/>
       <Partnership/>
+      <Blog/>
     </div>
   )
 }

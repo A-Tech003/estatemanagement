@@ -1,0 +1,5 @@
+.Blog-Container{
+    max-width: 100%;
+    min-height: 40rem;
+    background: linear-gradient(75deg, #ECD9CF, #FFF0E9);
+}

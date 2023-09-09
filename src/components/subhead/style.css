@@ -1,0 +1,28 @@
+.serviceHead{
+    /* border: 2px solid black; */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.serviceSubHead span{
+    margin-right: 0.3rem;
+    color: #FFBB50;
+}
+
+.serviceSubHead{
+    max-width: 250px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
+    font-size: 1rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0.3rem;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.servicehead{
+    margin-bottom: 0rem;
+}
