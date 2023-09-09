@@ -10,7 +10,7 @@ import Review from '../components/review/Review';
 import Counter from '../components/counter/Counter';
 import NeigborHood from '../components/neigborhood/NeigborHood';
 import Partnership from '../components/partnership/Partnership';
-import Blog from '../components/blog/Blog';
+import Blog from '../components/blog/CardBlog';
 
 const Home = () => {
   return (
