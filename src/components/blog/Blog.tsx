@@ -11,17 +11,23 @@ const Blog = () => {
 
 
   useEffect(() => {
-    setLoading(!isloading)
+    setLoading(true)
     fetch("https://laravelrealestateapi.000webhostapp.com/api/featureArticle")
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return res.json();
+    })
     .then((data) => {
+      setLoading(false)
       console.log(data.data);
       setBlogs(data.data);
-      setLoading(isloading)
     })
     .catch((err) => {
       console.log(err.message)
       setError(err.message)
+      setLoading(false)
     })
   }, []);
 
