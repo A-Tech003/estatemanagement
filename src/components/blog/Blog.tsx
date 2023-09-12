@@ -45,15 +45,15 @@ const Blog = () => {
     )
 }else{
   return (
-    <div>
+    <div className="cards">
         
         {
           blogs.map((blog: any) => {
             return(
-              <div className='card-Con' key={blog.image}>
-                  <div className="blog-image">{blog.image}</div>
+              <div className='card-Con' key={blog.id}>
+                  <div className="blog-image"><img src={blog.image} alt="" /></div>
                   <p>{blog.tag}</p>
-                  <h3>{blog.title}</h3>
+                  <h2>{blog.title}</h2>
               </div>
             )
           })
