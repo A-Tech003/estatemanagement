@@ -11,6 +11,7 @@ import Counter from '../components/counter/Counter';
 import NeigborHood from '../components/neigborhood/NeigborHood';
 import Partnership from '../components/partnership/Partnership';
 import Blog from '../components/blog/CardBlog';
+import Footer from '../components/footer/Footer';
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <NeigborHood/>
       <Partnership/>
       <Blog/>
+      <Footer/>
     </div>
   )
 }
