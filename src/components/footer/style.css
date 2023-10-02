@@ -1,5 +1,65 @@
 .footerContainer{
     max-width: 100%;
-    min-height: 500px;
+    min-height: 700px;
     background: #fff;
+    padding: 2rem;
+}
+
+.footContent{
+    width: 75%;
+    height: 700px;
+    border: 2px solid;
+    margin: 0 auto;
+}
+
+.topcon{
+    display: flex;
+}
+
+.topcon .logo{
+    border-bottom: 1px solid rgb(95, 95, 95);
+
+    width: 40%;
+    height: 20rem;
+    display: grid;
+    place-content: center;
+}
+
+.topcon .logo .icons{
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    color: #3B3A5D;
+}
+
+.mailsub{
+    border-left: 1px solid rgb(95, 95, 95);
+    border-bottom: 1px solid rgb(95, 95, 95);
+    width: 70%;
+    display: grid;
+    place-content: center;
+}
+
+.mailsub p{
+    max-width: 38rem;
+    font-size: 18px;
+    color: #B16642;
+}
+
+.mailField{
+    margin-top: 1rem;
+}
+
+.mailField input{
+    width: 20rem;
+    height: 4rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 0.3rem;
+}
+
+.mailField button{
+    height: 4rem;
+    width: 13rem;
 }
