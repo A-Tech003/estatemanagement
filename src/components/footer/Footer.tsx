@@ -1,7 +1,8 @@
 import "./style.css";
 import React from 'react'
 import logo from "../../assests/logo.png"
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaMapMarkerAlt, FaPhone, FaTwitter, FaYoutube } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -35,7 +36,52 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="bottomCon">
+          <div className="link">
+            <div className="lin1">
+              <h3>Company</h3>
+              <p>About</p>
+              <p>Blog</p>
+              <p>Properties</p>
+              <p>Agents</p>
+              <p>Services</p>
+              <p>Contact us</p>
+            </div>
+            <div className="lin1">
+              <h3>Services</h3>
+              <p>Rent A Home</p>
+              <p>Sell A Home</p>
+              <p>Buy A Home</p>
+              <p>Property Insurance</p>
+              <p>Member Support</p>
+              <p>Experience Agent</p>
+            </div>
+            <div className="lin1">
+              <h3>Utitlity Pages</h3>
+              <p>Style Guide</p>
+              <p>Licenses</p>
+              <p>Channel Log</p>
+              <p>Password</p>
+              <p>Not found</p>
+              <p>More Template</p>
+            </div>
+          </div>
 
+          <div className="contact">
+            <div className="conInfo">
+              <h1>Contact US</h1>
+
+              <FaMapMarkerAlt/>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span><br />
+
+              <FaPhone/>
+              <span>1234567890</span> <br />
+
+              <FaMailBulk/>
+              <span>example@gmail.com</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
